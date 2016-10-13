@@ -34,6 +34,8 @@ EXPOSE 3128/tcp
 
 # set environment variables for user nobody
 ENV HOME /home/nobody
+ENV PUID 1000
+ENV PGID 1000
 
 # set permissions
 #################

@@ -27,8 +27,8 @@ cat <<EOF >>/etc/squid/squid.conf
 
 # the following defaults were added by the container install.sh from jdelkins/arch-squid
 
-cache_effective_user squid-docker
-cache_effective_group squid-docker
+cache_effective_user nobody
+cache_effective_group users
 pid_filename /config/squid.pid
 cache_dir diskd /cache 51200 64 128
 cache_log /config/log/cache.log
